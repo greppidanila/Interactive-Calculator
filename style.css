@@ -83,3 +83,26 @@ button:active {
   font-size: 25px;
   margin: 5px 0;
 }
+
+@media screen and (max-width: 600px) {
+
+  .layout {
+    width: 250px;
+    height: 400px;
+    margin: 20px;
+  }
+  .calculator {
+    height: 380px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 56px);
+    grid-template-rows: minmax(35px, auto) repeat(5, 50px);
+  }
+  .calculator > button {
+    font-size: 1.5rem;
+  }
+  .span-two {
+    height: 75%;
+    width: 90%;
+  }
+}
